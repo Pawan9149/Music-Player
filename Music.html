@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicPlayer</title>
+    <link rel="stylesheet" href="Music.css">
+</head>
+<body>
+    <header>
+     <img src="musicplaylist.svg" alt="playlist" id="playlist-img">
+     <h2> FEEL THE MUSIC</h2>
+     <img src="musicnote.svg" alt="music" id="music">
+    </header>
+    <main>
+        <div class="left">
+         <div class="song-image">
+            <img src="music_anim.webp" alt="anim" id = "musican">
+         </div>  
+         <div class="volume-div">
+            <div class="volume-img">
+                <img src="volume.svg" alt="volume" id="vol-svg">
+            </div>
+            <input type="range" value="30" id="volume-range" onchange="volume()">
+         </div> 
+        </div>
+        <div class="right">
+            <div class="details">
+                <h3 id="song-name">Dekha Tenu</h3>
+                <h5 id="song-singer">Udit Narayan </h5>
+            </div>
+            <input type="range" value="0" id="song-duration" onchange="Duration()">
+            <div class="controls">
+                <div class="prev">
+                <img src="previous.svg" alt="previous"id="prev-image"
+                onclick="previousSong()">
+                </div>
+                <div class="play-pause">
+
+                <img src ="play.svg" alt="play" id="play-pause"
+                onclick="playpause()">
+                </div>
+                <div class="next-img">
+                <img src = "skip1.svg" alt="next" id="next"
+                onclick="nextSong()">
+                </div>
+            </div>
+        </div>
+        <div class="playlist">
+            <div class="playlist-song">
+                <img src="firstphoto.jpg" alt="img" style="height: 50px; width: 50px;">
+                <div class="song-details">
+                    <h4>
+                        Dekha Tenu
+                    </h4>
+                    <h5>Udit Naryan</h5>
+                </div>
+
+            </div>
+            <div class="playlist-song">
+                <img src="second1.jpg" alt="img" style="height: 50px; width: 50px;">
+                <div class="song-details">
+                    <h4>
+                        Mann Bharya
+                    </h4>
+                    <h5>B Praak</h5>
+                </div>
+
+            </div>
+            <div class="playlist-song">
+                <img src="Thirdphoto.jpg" alt="img" style="height: 50px; width: 50px;" >
+                <div class="song-details">
+                    <h4>
+                        Mannat
+                    </h4>
+                    <h5>Darshan Raval</h5>
+                </div>
+
+            </div>
+            <div class="playlist-song">
+                <img src="Fourth.jpg" alt="img" style="height: 50px; width: 50px;"> 
+                <div class="song-details">
+                    <h4>
+                        Tu hi yaar Mera
+                    </h4>
+                    <h5>Udit Narayan</h5>
+                </div>
+                
+            </div>
+        </div>
+        </main>
+    <script src="Music.js"></script>
+</body>
+</html>
